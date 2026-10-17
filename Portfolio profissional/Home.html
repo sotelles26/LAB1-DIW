@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfólio - Susana Telles</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("S5Ym77TMgIasYq6MJ");
+            })();
+        </script>
+    </head>
+    <body>
+        <div class="background">
+            <header>   <!--é como se fosse o cabeçalho da pagina-->
+                <div class="menu"> <!--é o menu q fica em cima-->
+                    <nav>
+                        <div class="logo">
+                            <a href="Home.html">Susana Telles</a>
+                        </div>
+                        <ul class="ul">
+                            <li><a href="#home" class="ativa">Home</a></li>
+                            <li><a href="#projects">Projetos</a></li>
+                            <li><a href="#design">DesignSystem</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                        <div class="bloco-traduzir">
+                            <button class="botao-portugues" onclick="traduzirPaginas('pt')">PT</button>
+                            <button class="botao-ingles" onclick="traduzirPaginas('en')">EN</button>
+                        </div>
+                        <div id="google_translate_element"></div>
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({
+                                    pageLanguage: 'pt',
+                                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                                }, 'google_translate_element');
+                            }
+                            function traduzirPaginas(idioma) {
+                                if (idioma === 'pt') {
+                                    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+                                    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + location.hostname + ';';
+                                } else {
+                                    document.cookie = 'googtrans=/pt/' + idioma + '; path=/;';
+                                    document.cookie = 'googtrans=/pt/' + idioma + '; path=/; domain=' + location.hostname + ';';
+                                }
+                                window.location.reload();
+                            }
+                        </script>
+                        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="imagem" id="home">
+                    <div class="foto-main">
+                        <img src="WhatsApp Image 2026-10-16 at 18.09.30.jpeg"/>
+                    </div>
+                    <div class="texto-main">
+                        <h1>Susana<br>
+                            Oliveira e<br>
+                            Telles
+                        </h1>
+                        <p>
+                            Aluna da instituição de ensino PUC Minas<br>
+                            do curso de Ciências da Computação.
+                        </p>
+                        <div class="curriculo">
+                            <img src="Share 2 - 192x192.png" alt="Icone-download"/>
+                            <a href="Currículo(Susana Oliveira e Telles).pdf" download="Currículo(Susana_Oliveira_e_Telles).pdf" type="application/pdf">
+                                <button class="butao-curriculo">Currículo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="titulo-proj">
+                    <img src="opened-Folder.png"/>
+                    <h2>PROJETOS</h2>
+                </div>
+                <div class="bloco-projetos" id="projects">
+                    <div class="bloco1">
+                        <div class="imagem-proj1">
+                            <img src="fotoproj1.jpg"/>
+                        </div>
+                        <div class="texto1">
+                            <h2 class="texto-proj1">Meu perfil</h2>
+                            <p>
+                                Projeto simples de uma pagina de perfil.<br>
+                                contendo uma breve descrição de um estudante e<br>
+                                a apresentação de alguns de seus hobbies.
+                            </p>
+                            <div class="link-repositorio1">
+                                <img src="Vector.png" alt="Icone-github"/>
+                                <a href="https://github.com/sotelles26/AV1-DIW" target="_blank" style="text-decoration: none;">
+                                    <button class="butao-proj1">Repositório GitHub</button>
+                                </a>
+                            </div>
+                            <div class="linguagem1">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JAVASCRIPT</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloco2">
+                        <div class="imagem-proj2">
+                            <img src="fotoproj2.webp"/>
+                        </div>
+                        <div class="texto2">
+                            <h2 class="texto-proj2">Vireo</h2>
+                            <p>
+                                Projeto simples de uma pagina para adicionar livros e uniformes,<br>
+                                além de possibilitar a troca de materiais entre<br>
+                                os usuários.
+                            </p>
+                            <div class="link-repositorio2">
+                                <img src="Vector.png" alt="Icone-github"/>
+                                <a href="https://github.com/ICEI-PUC-Minas-CC-TI/plu-cc-2026-2-ti2-4354100-plu-cc-2026-2-ti2-4354100-group-6/tree/master/codigo/public/.Susana/Site%20TI" target="_blank">
+                                    <button class="butao-proj2">Repositório GitHub</button>
+                                </a>
+                            </div>
+                            <div class="linguagem2">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="titulo-design">
+                    <h2>DESIGNSYSTEM</h2>
+                </div>
+                <div class="bloco-design" id="design">
+                    <h2 class="texto-design">Cores</h2>
+                    <div class="titulo-conteudo1">
+                        <h2>Superfícies</h2>
+                    </div>
+                    <div class="cor-design">
+                        <div class="amostra" style="background-color: #ffffff;"></div>
+                        <div>
+                            <strong>--bg-page</strong>
+                            <p>#ffffff - Fundo da página, menu e campos do formulário</p>
+                        </div>
+                    </div>
+                    <div class="cor-design">
+                        <div class="amostra" style="background-color: #f2f2f2;"></div>
+                        <div>
+                            <strong>--surface</strong>
+                            <p>#f2f2f2 - Botões PT/EN, formulário, bloco de contato e tags de linguagem</p>
+                        </div>
+                    </div>
+                    <h2>Texto</h2>
+                    <div class="cor-design">
+                        <div class="amostra" style="background-color: #ffffff; color: #000000;">Aa</div>
+                        <div>
+                            <strong>--text</strong>
+                            <p>#000000 - Texto principal, títulos e logo</p>
+                            <span class="selo">21:1</span>
+                        </div>
+                    </div>
+                    <div class="cor-design">
+                        <div class="amostra" style="background-color: #ffffff; color: #111176;">Aa</div>
+                        <div>
+                            <strong>--text-brand</strong>
+                            <p>#111176 - Título do contato e texto digitado nos campos</p>
+                            <span class="selo">15.4:1</span>
+                        </div>
+                    </div>
+                    <h2>Destaque</h2>
+                    <div class="cor-design">
+                        <div class="amostra" style="background-color: #111176;"></div>
+                        <div>
+                            <strong>--primary</strong>
+                            <p>#111176 - Bordas, botões e botão Enviar</p>
+                        </div>
+                    </div>
+                    <div class="cor-design">
+                        <div class="amostra" style="background-color: #2e2e89;"></div>
+                        <div>
+                            <strong>--primary-hover</strong>
+                            <p>#2e2e89 - Hover do menu e item ativo</p>
+                        </div>
+                    </div>
+                    <div class="cor-design">
+                        <div class="amostra" style="background-color: #111176; color: #ffffff;">Aa</div>
+                        <div>
+                            <strong>--on-primary</strong>
+                            <p>#ffffff - Texto sobre botões e menu ativo</p>
+                            <span class="selo">15.4:1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="titulo-contato">
+                    <h2>CONTATO</h2>
+                </div>
+                <div class="bloco-contato" id="contact">
+                    <form id="meu-formulario">
+                        <h2>Entre em contato</h2>
+                        <div class="campo">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="user-name" placeholder="Seu nome"required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="user-email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="campo">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
+                        </div>
+                        <input type="submit" value="Enviar">
+                    </form>
+                    <div class="icones-contato">
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/susana-oliveira-989a38417/" target="_blank">
+                                <img src="Platform=LinkedIn, Color=Original.png" alt="Icone-linkedin"/>
+                            </a> 
+                        </div>
+                        <div class="github">
+                            <a href="https://github.com/sotelles26" target="_blank">
+                                <img src="Vector.png" alt="Icone-github"/>
+                            </a>
+                        </div>
+                        <div class="gmail">
+                            <a href="mailto:susanatelles06@gmail.com">
+                                <img src="Social=Gmail,Style=Original.png" alt="Icone-gmail"/>
+                            </a>
+                        </div>
+                        <div class="whats">
+                            <a href="https://wa.me/38991352608" target="_blank">
+                                <img src="Vector2.png" alt="Icone-whatsapp"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>   
+    </body>
+</html>
